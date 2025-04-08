@@ -4,7 +4,7 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
-ExecStart=/<repo_name>/.venv/bin/gunicorn --chdir /<repo_name> --bind 0.0.0.0:80 --workers 2 app:app
+ExecStart=/washington_cicd/.venv/bin/gunicorn --chdir /washington_cicd --bind 0.0.0.0:80 --workers 2 app:app
 
 [Install]
 WantedBy=multi-user.target
